@@ -1,6 +1,6 @@
-TOOLHARBOUR V1 POLISHED LAUNCH PACK
+MORLICH CO FREE ONLINE TOOLS
 
-UPLOAD TO GITHUB:
+DEPLOYMENT NOTES:
 1. Open the ZIP.
 2. Upload the CONTENTS of this folder to your GitHub repo.
 3. index.html must be visible at the top level/root of the repo.
@@ -10,7 +10,7 @@ UPLOAD TO GITHUB:
    Branch: main
    Folder: /root
 
-LAUNCH CHECK:
+SITE CHECKS:
 - index.html visible in repo root
 - assets/styles.css visible
 - tools folder visible
