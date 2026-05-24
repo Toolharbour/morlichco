@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amps to kW Calculator | Morlich Co</title>
+<meta name="description" content="Convert amps to kilowatts for single-phase and three-phase loads.">
+<link rel="stylesheet" href="morlich-electrical-tools.css">
+</head>
+<body>
+<header>
+<h1>Amps to kW Calculator</h1>
+<p>Convert amps to kilowatts for single-phase and three-phase loads.</p>
+<nav>
+<a href="index.html">Electrical Tools</a>
+<a href="../../index.html">Home</a>
+<a href="voltage-drop.html">Voltage Drop</a>
+<a href="battery-runtime-pro.html">Battery Runtime</a>
+</nav>
+</header>
+<main>
+<section class="card">
+
+<div class="grid">
+<div><label>Current (A)</label><input id="amps" type="number" step="0.01" placeholder="e.g. 32"></div>
+<div><label>Voltage (V)</label><input id="voltage" type="number" step="0.01" value="230"></div>
+<div><label>Power Factor</label><input id="pf" type="number" step="0.01" value="1"></div>
+<div><label>Phase</label><select id="phase"><option value="1">Single phase</option><option value="3">Three phase</option></select></div>
+</div><br><button onclick="calc()">Calculate kW</button><div id="result" class="result">Results will appear here.</div>
+
+</section>
+<section class="card">
+<div class="disclaimer"><strong>Competent persons only:</strong> These tools are for quick reference and estimate support only. They are not a substitute for professional electrical design, inspection, certification, standards, or local regulations.</div>
+</section>
+</main>
+<footer><p>© 2026 Morlich Co. All rights reserved.</p></footer>
+<script>
+function num(id){ const v=parseFloat(document.getElementById(id).value); return Number.isFinite(v)?v:NaN; }
+function out(id, html){ document.getElementById(id).innerHTML=html; }
+
+function calc(){
+ let I=num('amps'), V=num('voltage'), pf=num('pf'), ph=document.getElementById('phase').value;
+ if([I,V,pf].some(Number.isNaN)||I<=0||V<=0||pf<=0||pf>1){out('result','Enter valid values. PF must be >0 and ≤1.');return;}
+ let kw = ph==='3' ? (Math.sqrt(3)*V*I*pf)/1000 : (V*I*pf)/1000;
+ out('result',`Estimated power: <strong>${kw.toFixed(2)} kW</strong>`);
+}
+
+</script>
+</body>
+</html>

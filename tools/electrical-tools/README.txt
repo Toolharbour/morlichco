@@ -1,25 +1,33 @@
-Morlich Co Electrical Tools Wave 1 — Complete V1
+# Morlich Co Electrical Tools Wave 2
 
-Included files:
-1. electrical-tools-index.html
-2. ohms-law-wheel.html
-3. watts-volts-amps.html
-4. power-triangle.html
-5. voltage-drop.html
-6. dc-voltage-drop.html
-7. fuse-rating.html
-8. mcb-sizing.html
-9. cable-capacity.html
-10. power-consumption.html
-11. battery-runtime.html
-12. three-phase.html
-13. morlich-electrical-tools.css
-14. AUDIT_REPORT.txt
+ASSET / SELLABLE PRODUCT SUPPORT FILES
 
-Deployment:
-- Upload all files together into an electrical-tools folder OR adapt links to match your live GitHub Pages structure.
-- If placed inside /electrical-tools/, update homepage links to point to electrical-tools/electrical-tools-index.html.
-- Keep the CSS file in the same folder as the tool pages unless you alter stylesheet paths.
+Generated batch: 10 electrical utility tools.
 
-Safety:
-These tools provide guidance only. They do not replace competent electrical design, installation, inspection, testing, certification, or regulations in force.
+## Files to upload into
+tools/electrical-tools/
+
+## New tools
+- cable-size-calculator.html
+- kw-to-amps-calculator.html
+- amps-to-kw-calculator.html
+- solar-panel-output-calculator.html
+- inverter-size-calculator.html
+- led-resistor-calculator.html
+- voltage-divider-calculator.html
+- battery-runtime-pro.html
+- earth-loop-impedance-estimator.html
+- transformer-va-calculator.html
+
+## Audit status
+Static/local code audit: PASS
+
+## Required final live audit after upload
+1. Copy all files into tools/electrical-tools/
+2. Commit to main: Add electrical tools wave 2
+3. Push origin
+4. Verify files online in GitHub
+5. Test every direct URL live
+6. Test every button from wave-2-index.html
+7. Test on phone
+8. Confirm no 404s
