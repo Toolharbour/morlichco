@@ -2,13 +2,13 @@
 :root{
   --bg:#0f172a;
   --panel:#111827;
-  --card:#ffffff;
-  --text:#0f172a;
+  --card:#111827;
+  --text:#e5e7eb;
   --muted:#64748b;
   --brand:#2563eb;
   --brand2:#14b8a6;
-  --soft:#f8fafc;
-  --border:#e2e8f0;
+  --soft:#of172a;
+  --border:#25324a;
 }
 *{box-sizing:border-box}
 body{
